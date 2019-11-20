@@ -11,12 +11,12 @@ public class ConsumableItem extends Item {
 
   final static int LINESIZE = 50 + 1; // The number of characters + a newline (\n).
   final static File file = new File(Game.LANGPATH + "consumableItem.csv");
-  static Random rand = new Random(); 
+  static Random rand = new Random();
 
   public ConsumableItem(int x, int y) {
     super(x, y);
     id = rand.nextInt( (int) (file.length() / LINESIZE) -1) + 1; // Generates an ID above 1, as the first line is the header
-  } 
+  }
 
   public ConsumableItem(int x, int y, int id) {
     super(x, y);
@@ -36,7 +36,7 @@ public class ConsumableItem extends Item {
 
     String[] attrs = item.split(",");
     ret = attrs[0] + "\n" +
-      "Amount healed:" + attrs[1] + "\n" + 
+      "Amount healed:" + attrs[1] + "\n" +
       "Description:" + attrs[2];
 
     return ret;

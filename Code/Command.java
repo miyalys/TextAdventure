@@ -141,7 +141,7 @@ public class Command {
           }
         }
         else {
-          System.out.println("Invalid distance: Must be a positive, numerical value"); 
+          System.out.println("Invalid distance: Must be a positive, numerical value");
           return false;
         }
       case "enter":
@@ -150,23 +150,23 @@ public class Command {
         Building b;
         if ( ob.isPresent() ) {
           b = ob.get();
-          if (b.starterBuilding == true) { 
+          if (b.starterBuilding == true) {
             new StartBase(); // TODO: Consider: Create a new one or restore the old one, either removing the "end" variable or setting it to false, so it doesn't exit immediately
           }
-          else { 
+          else {
             // TODO: Handle entering regular building here instead
-            System.out.println("Standing on a regular building!"); 
+            System.out.println("Standing on a regular building!");
             System.out.println(b); // Just for testing
-          } 
+          }
           pressEnterToContinue(); return true;  // Entering a building counts as movement (= NPCs move)
         }
-        else { 
+        else {
           System.out.println("You're not standing on a building.");
           pressEnterToContinue(); return false;
         }
       case "exit":
         if (allWords.length > 1) {
-          if (allWords[1].equals("game") ) running = false; 
+          if (allWords[1].equals("game") ) running = false;
           return false;
         }
       default:

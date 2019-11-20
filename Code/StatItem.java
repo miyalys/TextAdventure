@@ -12,7 +12,7 @@ public class StatItem extends Item {
   final static File file = new File(Game.LANGPATH + "statItem.csv");
 
   final static int LINESIZE = 63 + 1; // The number of characters + a newline (\n).
-  static Random rand = new Random(); 
+  static Random rand = new Random();
 
   // Fetches a random StatItem
   public StatItem(int x, int y) {

@@ -75,7 +75,7 @@ public class Area extends Point {
   private void move(Person reqPerson, Command.Direction direction, int reqDistance) {
 
     for (Person person : persons) {
-      if ( person == reqPerson) { 
+      if ( person == reqPerson) {
         int distance;
 
         if (direction == Command.Direction.NORTH) {
@@ -121,7 +121,7 @@ public class Area extends Point {
   public boolean playerOnNPC() {
     for (Person p : persons) {
       if (p instanceof NPC) { // Don't fight yourself
-        if ( p.getX() == player.getX() && p.getY() == player.getY() ) 
+        if ( p.getX() == player.getX() && p.getY() == player.getY() )
           return true;
       }
     }

@@ -32,8 +32,8 @@ public class GameMenu {
     System.out.println(
         "\nTextAdventure!\n" +
         "--------------\n" +
-        "1. Start game \n" + 
-        "2. Options \n" + 
+        "1. Start game \n" +
+        "2. Options \n" +
         "--------------\n" +
         "3. Exit game \n" +
         "\n" +

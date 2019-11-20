@@ -13,7 +13,7 @@ public class Item extends Point {
   int id;
   final static int LINESIZE = 45 + 1; // The number of characters + a newline (\n).
   final static File file = new File(Game.LANGPATH + "item.csv");
-  static Random rand = new Random(); 
+  static Random rand = new Random();
 
   // Fetches a random Item.
   public Item(int x, int y) {

@@ -9,7 +9,7 @@ public class Enemies {
 
   Random rand = new Random();
 
-  String[] enemies = {"Ghoul","Zombie","Raider","Monster","Acid Goo","Monster Rat","Sewage Tentacle","Death Mold","Political extremists","Religious extremists","Icywind","Raiderboss","Zombieboss","Madcow","Supermutant","Deathclaw","Boneking"}; 
+  String[] enemies = {"Ghoul","Zombie","Raider","Monster","Acid Goo","Monster Rat","Sewage Tentacle","Death Mold","Political extremists","Religious extremists","Icywind","Raiderboss","Zombieboss","Madcow","Supermutant","Deathclaw","Boneking"};
 
   /**
    *
@@ -56,13 +56,13 @@ public class Enemies {
 
     if(enemy.contains("Ghoul")){
       maxEnemyHealth = randomHealth.nextInt(maxGhoulHealth);
-    } 
+    }
     else if (enemy.contains("Zombie")) {
       maxEnemyHealth = randomHealth.nextInt(maxZombieHealth);
-    } 
+    }
     else if (enemy.contains("Raider")) {
       maxEnemyHealth = randomHealth.nextInt(maxRaiderHealth);
-    } 
+    }
     else if (enemy.contains("Monster")) {
       maxEnemyHealth = randomHealth.nextInt(maxMonsterHealth);
     }
@@ -104,7 +104,7 @@ public class Enemies {
     }
     else if(enemy.contains("Boneking")) {
       maxEnemyHealth = randomHealth.nextInt(maxBonekingHealth) + 60; // Between 59-159 HP, shouldn't be too easy
-    }     
+    }
 
     if(maxEnemyHealth == 0) {
       maxEnemyHealth = 1;

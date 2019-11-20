@@ -33,13 +33,13 @@ public class enemyAttackDamage {
 
     if(enemy.contains("Ghoul")){
       EnemyAttackDamage = rand.nextInt(GhoulAttackDamage);
-    } 
+    }
     else if (enemy.contains("Zombie")) {
       EnemyAttackDamage = rand.nextInt(ZombieAttackDamage);
-    } 
+    }
     else if (enemy.contains("Raider")) {
       EnemyAttackDamage = rand.nextInt(RaiderAttackDamage);
-    } 
+    }
     else if (enemy.contains("Monster")) {
       EnemyAttackDamage = rand.nextInt(MonsterAttackDamage);
     }
@@ -83,7 +83,7 @@ public class enemyAttackDamage {
       EnemyAttackDamage = rand.nextInt(BonekingAttackDamage);
     } else {
       EnemyAttackDamage = 1;
-    }     
+    }
 
     if(EnemyAttackDamage == 0){
       EnemyAttackDamage = 1;

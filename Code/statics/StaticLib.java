@@ -103,7 +103,7 @@ public class StaticLib {
     while (value < min || value > max) {
 
       System.out.println("Numerical value must be in the range of (" + min + ", " + max + ")");
-      value = getNumericalInputLoop();    
+      value = getNumericalInputLoop();
     }
     return value;
   }

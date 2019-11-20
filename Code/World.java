@@ -15,7 +15,7 @@ public class World extends Area {
 
     super(0, 0, SIZE); // No actual use at the moment
 
-    rand = new Random(); 
+    rand = new Random();
 
     for (int y = 0; y<SIZE; y++) {
 

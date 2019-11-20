@@ -35,7 +35,7 @@ public class Combat {
     //Player variables
     int health = 100;
     int attackDamage = 50;
-    int numHealthPotions = 3; 
+    int numHealthPotions = 3;
     int healthPotionHealAmount = 30;
     int healthPotionDropChance = 50; //Percentage
 
@@ -48,7 +48,7 @@ GAME:
       System.out.println("--------------------------------------------------------------------------------------------------------------------------------");
 
       String enemy = enemies.generateEnemy();
-      maxEnemyHealth = enemies.setEnemyHealth(enemy); 
+      maxEnemyHealth = enemies.setEnemyHealth(enemy);
 
       System.out.println("\t# " + enemy + " appeared! #\n");
       // # Enemy has appeared #
@@ -77,7 +77,7 @@ GAME:
           int damageTaken = enemyAttackDamageGenerator.setEnemyAttackDamage(enemy);
 
           maxEnemyHealth -= damageDealt;
-          health -= damageTaken;         
+          health -= damageTaken;
 
 
           System.out.println("\t> You strike the " + enemy + " for " + damageDealt + "damage.");
@@ -90,12 +90,12 @@ GAME:
             return PLAYER_DEAD;
           }
         }
-        else if(input.equals("2")) { 
+        else if(input.equals("2")) {
           int damageDealt = arsenal.pistolAttack();  // rand.nextInt(attackDamage);
           int damageTaken = enemyAttackDamageGenerator.setEnemyAttackDamage(enemy);
 
           maxEnemyHealth -= damageDealt;
-          health -= damageTaken;         
+          health -= damageTaken;
 
 
           System.out.println("\t> You shoot the" + enemy + " for " + damageDealt + "damage.");
@@ -105,15 +105,15 @@ GAME:
 
           if(health < 1) {
             System.out.println("\t> You have taken too much damage, you are too weak to go on!");
-            break; 
+            break;
           }
         }
-        else if(input.equals("3")) { 
+        else if(input.equals("3")) {
           int damageDealt = arsenal.shotgunAttack();  // rand.nextInt(attackDamage);
           int damageTaken = enemyAttackDamageGenerator.setEnemyAttackDamage(enemy);
 
           maxEnemyHealth -= damageDealt;
-          health -= damageTaken;         
+          health -= damageTaken;
 
 
           System.out.println("\t> You shoot the" + enemy + " for " + damageDealt + "damage.");
@@ -123,14 +123,14 @@ GAME:
 
           if(health < 1) {
             System.out.println("\t> You have taken too much damage, you are too weak to go on!");
-            break; 
+            break;
           }
-        }else if(input.equals("4")) { 
+        }else if(input.equals("4")) {
           int damageDealt = arsenal.riffleAttack();  // rand.nextInt(attackDamage);
           int damageTaken = enemyAttackDamageGenerator.setEnemyAttackDamage(enemy);
 
           maxEnemyHealth -= damageDealt;
-          health -= damageTaken;         
+          health -= damageTaken;
 
 
           System.out.println("\t> You shoot the" + enemy + " for " + damageDealt + "damage.");
@@ -140,15 +140,15 @@ GAME:
 
           if(health < 1) {
             System.out.println("\t> You have taken too much damage, you are too weak to go on!");
-            break; 
+            break;
           }
-        }else if(input.equals("5")) { 
+        }else if(input.equals("5")) {
 
           int damageDealt = arsenal.automaticgunAttack();  // rand.nextInt(attackDamage);
           int damageTaken = enemyAttackDamageGenerator.setEnemyAttackDamage(enemy);
 
           maxEnemyHealth -= damageDealt;
-          health -= damageTaken;         
+          health -= damageTaken;
 
 
           System.out.println("\t> You shoot the" + enemy + " for " + damageDealt + "damage.");
@@ -158,14 +158,14 @@ GAME:
 
           if(health < 1) {
             System.out.println("\t> You have taken too much damage, you are too weak to go on!");
-            break; 
+            break;
           }
-        }else if(input.equals("6")) { 
+        }else if(input.equals("6")) {
           int damageDealt = arsenal.sledgehammerAttack();  // rand.nextInt(attackDamage);
           int damageTaken = enemyAttackDamageGenerator.setEnemyAttackDamage(enemy);
 
           maxEnemyHealth -= damageDealt;
-          health -= damageTaken;         
+          health -= damageTaken;
 
 
           System.out.println("\t> You strike the " + enemy + " for " + damageDealt + "damage.");
@@ -175,14 +175,14 @@ GAME:
 
           if(health < 1) {
             System.out.println("\t> You have taken too much damage, you are too weak to go on!");
-            break; 
+            break;
           }
-        }else if(input.equals("7")) { 
+        }else if(input.equals("7")) {
           int damageDealt = arsenal.crowbarAttack();  // rand.nextInt(attackDamage);
           int damageTaken = enemyAttackDamageGenerator.setEnemyAttackDamage(enemy);
 
           maxEnemyHealth -= damageDealt;
-          health -= damageTaken;         
+          health -= damageTaken;
 
 
           System.out.println("\t> You strike the " + enemy + " for " + damageDealt + "damage.");
@@ -192,15 +192,15 @@ GAME:
 
           if(health < 1) {
             System.out.println("\t> You have taken too much damage, you are too weak to go on!");
-            break; 
+            break;
           }
         }
-        else if(input.equals("8")) { 
+        else if(input.equals("8")) {
           int damageDealt = arsenal.chainsawAttack();  // rand.nextInt(attackDamage);
           int damageTaken = enemyAttackDamageGenerator.setEnemyAttackDamage(enemy);
 
           maxEnemyHealth -= damageDealt;
-          health -= damageTaken;         
+          health -= damageTaken;
 
 
           System.out.println("\t> You strike the " + enemy + " for " + damageDealt + "damage.");
@@ -210,7 +210,7 @@ GAME:
 
           if(health < 1) {
             System.out.println("\t> You have taken too much damage, you are too weak to go on!");
-            break; 
+            break;
           }
         }
 
@@ -225,7 +225,7 @@ GAME:
             numHealthPotions--;
             System.out.println("\t> You drink a health potion, healing yourself for " + healthPotionHealAmount + " . "
                 + "\n\t> You now have " + health + " HP."
-                + "\n\t> You have " + numHealthPotions + " health potions left.\n"); 
+                + "\n\t> You have " + numHealthPotions + " health potions left.\n");
           }
           else{
             System.out.println("\t> You have no health potions left! Defeat enemies for a chance to get one!");
@@ -238,7 +238,7 @@ GAME:
 
         }
         else {
-          System.out.println("\tInvalid command!");        
+          System.out.println("\tInvalid command!");
         }
 
 
@@ -248,7 +248,7 @@ GAME:
         System.out.println("You limp away, weak from battle.");
         break;
 
-      } 
+      }
 
       // Exit battle immediately and win the game if the boneking was defeated:
       if ( enemy.equals("Boneking") ) return BONEKING_DEFEATED;

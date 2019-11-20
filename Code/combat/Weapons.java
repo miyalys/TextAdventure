@@ -9,7 +9,7 @@ public class Weapons {
 
   Random rand = new Random();
 
-  //percent chances 
+  //percent chances
 
   /**
    *
@@ -19,7 +19,7 @@ public class Weapons {
    */
   public int daggerAttack () {
     int daggerDamage = 10;
-    Random randDagger = new Random(); 
+    Random randDagger = new Random();
     return randDagger.nextInt(daggerDamage);
   }
 
@@ -57,7 +57,7 @@ public class Weapons {
     int riffleDamage = 30;
     Random randRiffle = new Random();
     return randRiffle.nextInt(riffleDamage);
-  } 
+  }
 
   /**
    *
